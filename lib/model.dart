@@ -11,7 +11,10 @@ enum OverlayFormat {
   cardID3,
 
   ///SIM cards
-  simID000
+  simID000,
+
+  ///Biller Code
+  billerCode,
 }
 enum OverlayOrientation { landscape, portrait }
 
@@ -49,6 +52,8 @@ class CardOverlay implements OverlayModel {
         return CardOverlay(ratio: 1.42, cornerRadius: 0.057);
       case (OverlayFormat.simID000):
         return CardOverlay(ratio: 1.66, cornerRadius: 0.073);
+      case (OverlayFormat.billerCode):
+        return CardOverlay(ratio: 1.55, cornerRadius: 0.013);
     }
   }
 }
