@@ -16,6 +16,7 @@ enum OverlayFormat {
   ///Biller Code
   billerCode,
 }
+
 enum OverlayOrientation { landscape, portrait }
 
 abstract class OverlayModel {
